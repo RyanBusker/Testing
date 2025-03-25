@@ -12,7 +12,7 @@ const socket = io("wss://your-amplify-backend-url"); // Replace with your WebSoc
 
 export default function Speaker() {
   const [isSpeaking, setIsSpeaking] = useState(false);
-  const [recognition, setRecognition] = useState<any>(null); // Updated type
+  const [recognition, setRecognition] = useState(null); // Updated type
   const [transcript, setTranscript] = useState("");
 
   useEffect(() => {
